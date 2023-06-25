@@ -1,0 +1,430 @@
+:root {
+    --btn-blue-color: rgba(0, 101, 254, 1);
+    --text-blue-color: rgba(0, 90, 226, 1);
+    --text-dark-color: rgba(20, 20, 20, 1);
+    --light-blue-color: rgba(249, 251, 253, 1);
+}
+
+/* .form-section {
+    background: linear-gradient(180deg, #1E3448 99.99%, rgba(30, 52, 72, 0) 100%);
+
+} */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+.logo {
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+}
+
+.logo h2 {
+    line-height: 32px;
+    color: var(--btn-blue-color);
+}
+
+.wrapper {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.nav-center {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding-left: 0;
+}
+
+.nav-center li {
+    font-size: 18px;
+}
+
+.nav-right {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    padding-left: 0;
+}
+
+.nav-right li {
+    font-size: 16px;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--text-dark-color);
+
+}
+
+.bluetext {
+    color: var(--text-blue-color);
+}
+
+.bg-light {
+    background-color: var(--light-blue-color);
+}
+
+.blue {
+    color: var(--btn-blue-color);
+}
+.blue-outline-btn {
+    background-color: rgb(255, 255, 255);
+    padding: 12px 24px 12px 24px;
+    border: 1px solid var(--btn-blue-color);
+    border-radius: 100px;
+    color: var(--btn-blue-color);
+}
+
+.blue-btn {
+    background-color: var(--btn-blue-color);
+    padding: 12px 24px 12px 24px;
+    border-radius: 100px;
+    color: rgb(255, 255, 255);
+}
+
+.chevron-down {
+    width: 24px;
+    height: 12px;
+    border: 1px;
+}
+
+.hero-section {
+    margin: 106px auto;
+    max-width: 948px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Gilroy-Bold', sans-serif;
+    line-height: 96px;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.swipe {
+    display: block;
+    width: fit-content;
+    margin: -16px auto 16px auto;
+}
+
+.hero-section p {
+    max-width: 781px;
+    margin: 0 auto;
+    line-height: 28px;
+    font-size: 18px;
+    text-align: center;
+    
+}
+
+.hero-section-links {
+    width: 282px;
+    margin: 56px auto;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.hero-section-links a {
+    text-decoration: none;
+}
+
+.hero-section-image {
+    max-width: 833px;
+    margin: 88px auto;
+}
+
+.blob{
+    color: rgba(226, 233, 240, 1);
+    position: relative;
+    left: 144px;
+    
+}
+
+.chain-container {
+    width: 768px;
+    margin: 16px auto;
+    padding: 40px 60px 40px 60px;
+    border: 0.5px solid var(--btn-blue-color);
+    border-radius: 24px;
+    background: linear-gradient(to right, rgba(226, 233, 240, 1), rgba(254, 254, 254, 0.1));
+    position: relative;
+    top: -264px;
+    left: 120px;
+}
+
+.chain-container p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+}
+
+
+/* .block {
+    display: block;
+} */
+
+.left-links {
+    display: flex;
+}
+
+.chain {
+    display: flex;
+    gap: 24px;
+}
+
+.link {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: -4px;
+}
+
+.hero-section-foot {
+    width: 99%;
+    margin: 0 auto;
+    margin-top: -96px;
+}
+
+.ellipse {
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.Rectangle {
+    width: inherit;
+}
+
+.achievements-section .wrapper {
+    display: flex;
+    gap: 120px;
+}
+
+.achievements-section h2 {
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.achievements {
+    display: flex;
+    gap: 72px;
+}
+
+.achievement h3 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 4px;
+}
+
+.achievement p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 4px;
+}
+
+.benefits-section .wrapper {
+    display: flex;
+    gap: 96px;
+    margin: 128px auto;
+}
+
+.benefits-section .left {
+    width: 398px;
+}
+
+.benefits-section h2 {
+    font-size: 40px;
+    line-height: 32px;
+    width: 382px;
+    margin-bottom: 16px;
+}
+
+.benefits-section p {
+    margin-top: 16px;
+}
+
+.benefits-section .right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 28px;
+}
+
+.benefit-content {
+    width: 340px;
+}
+
+.benefit-icon img{
+    border-radius: 50%;
+    border: 1px solid rgba(50, 132, 255, 0.13);
+    padding: 8px;
+    background-color: rgba(50, 132, 255, 0.13);
+    margin-bottom: 16px;
+}
+
+.benefit-content h3 {
+    font-size: 32px;
+    line-height: 28px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.benefit-content p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 16px;
+}
+
+.price-header {
+    max-width: 576px;
+    margin: 42px auto;
+} 
+
+.price-header h2 {
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.price-header p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    width: 556px;
+    margin-top: 16px;
+}
+
+.price-tab {
+    max-width: 1088px;
+    margin: 176px auto;
+    display: flex;
+}
+
+.price-card {
+    width: 379px;
+    height: 455px;
+    border: 0.4px solid var(--text-blue-color);
+    border-radius: 12px;
+}
+
+.dark-card {
+    width: 410px;
+    height: 627px;
+    background: linear-gradient(180deg, rgb(30, 52, 72) 99.99%, rgba(30, 52, 72, 0) 100%);
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: -96px;
+}
+
+.dark-card .plan-benefits {
+    position: relative;
+    left: -32px;
+}
+
+/* .dark-card .plan-benefits li {
+    margin: 24px 0;
+} */
+
+.price-card h4 {
+    font-size: 24px;
+    line-height: 32px;
+    position: relative;
+    /* text-align: center; */
+    top: 24px;
+    left: 87px;
+    margin-bottom: 16px;
+}
+
+.plan-benefits {
+    width: 194px;
+    margin: 90px auto;
+    margin-top: 16px;
+}
+
+.plan-benefits ul {
+    padding-left: 0;
+}
+
+.plan-benefits li {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 24px 0;
+}
+
+.plan-benefits li img {
+    margin-right: 8px;
+}
+
+.plan-cost h3 {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 8px;
+}
+
+.plan-cost p {
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 8px;
+}
+
+.plan-benefits li {
+    list-style: none;
+}
+
+.prof-card p {
+    width: 239px;
+}
+
+.prof-card ul {
+    width: 230px;
+}
+.teams-card {
+    margin-left: -24px;
+}
+
+.teams-card p {
+    width: 227px;
+}
+
+.teams-card ul {
+    width: 212px;
+}
+
+.basic-card {
+    margin-right: -24px;
+}
+
+.price-links {
+    width: 412px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.price-link {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 12px;
+}
